@@ -52,6 +52,25 @@ boot. Saving work means copying it somewhere on purpose, for example to a USB
 stick you mount yourself. A separate, optional data partition is planned but
 not part of the prototype.
 
+## Source code
+
+Every ISO comes with a `SOURCES.txt` file, next to it on the download page
+and inside the system at `/usr/share/doc/d77orphaned/SOURCES.txt`. It lists
+every package in the image, with its version and license, and says where to
+get its source:
+
+- Void Linux packages: `https://sources.voidlinux.org/<package>-<version>/`;
+- d77void packages: [d77void/srcpkgs-d77](https://github.com/d77void/srcpkgs-d77)
+  and each project's own page.
+
+The same file contains a written offer of the source code of every program
+in the image. Requests go to the
+[d77orphaned issues on GitHub](https://github.com/d77void/d77orphaned/issues).
+
+The image contains one package that is not free software in the strict
+sense: `nmap`, under the Nmap Public Source License (Void ships it in its
+"nonfree" repository).
+
 ## What it is not
 
 - Not a d77void variant to install: there is no installer.

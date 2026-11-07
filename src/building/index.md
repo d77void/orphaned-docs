@@ -47,6 +47,14 @@ sudo ./mkorphaned.sh -n \
 
 Packages already downloaded are cached in `xbps-cachedir-x86_64/`.
 
+## The SOURCES file
+
+Each build also writes `d77orphaned-live-x86_64-<date>.SOURCES.txt` next to
+the ISO, and puts the same file in the image at
+`/usr/share/doc/d77orphaned/SOURCES.txt` (`mksources.sh`, called from
+`postsetup.sh`). It is generated from the packages actually installed, so it
+always matches the ISO it comes with. Publish it together with the ISO.
+
 ## The build does not touch your /boot
 
 `mklive.sh` installs Memtest86+ into a helper directory that has no shell.
