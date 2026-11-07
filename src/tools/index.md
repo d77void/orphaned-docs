@@ -32,7 +32,7 @@ on the device you name. Check the device twice, and see
 ## Security tools
 
 The network tools are here for diagnostics and for testing networks you are
-**authorized** to test. Nothing in D77orphaned scans, captures or connects
+**authorized** to test. Nothing in d77orphaned scans, captures or connects
 anywhere on its own.
 
 ## Not included

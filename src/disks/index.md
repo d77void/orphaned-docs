@@ -1,7 +1,7 @@
 # Working safely with disks
 
-D77orphaned does not touch the computer's disks by itself (see
-[What D77orphaned is](../getting-started/overview.md#what-it-does-not-do-on-its-own)).
+d77orphaned does not touch the computer's disks by itself (see
+[What d77orphaned is](../getting-started/overview.md#what-it-does-not-do-on-its-own)).
 This page is about not touching them by accident once **you** start working.
 
 In the commands below, replace `/dev/sdX` (whole disk) and `/dev/sdX1`
@@ -79,7 +79,7 @@ failed, and the LUKS2 container's hash did not change.
 
 ## LVM
 
-D77orphaned never activates LVM volumes on its own. To activate one volume
+d77orphaned never activates LVM volumes on its own. To activate one volume
 group **read-only**:
 
 ```sh
@@ -105,7 +105,7 @@ Arrays are never assembled on their own. To assemble one read-only:
 sudo mdadm --assemble --readonly /dev/md0 /dev/sdX1 /dev/sdY1
 ```
 
-> Not verified yet in D77orphaned. Prefer imaging each member disk first.
+> Not verified yet in d77orphaned. Prefer imaging each member disk first.
 
 ## Swap
 

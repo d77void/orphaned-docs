@@ -26,12 +26,12 @@ should then start pwm again (not verified yet). See
 
 ## Utumno says "weather unavailable"
 
-Expected: D77orphaned blocks the weather request on purpose. See
+Expected: d77orphaned blocks the weather request on purpose. See
 [Network](../network/index.md#privacy).
 
 ## Utumno's network indicator says "offline"
 
-The indicator reads NetworkManager, which D77orphaned does not use. Check
+The indicator reads NetworkManager, which d77orphaned does not use. Check
 the real state with `ip -br addr`.
 
 ## A disk does not show up as mounted

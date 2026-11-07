@@ -1,6 +1,6 @@
-# What D77orphaned is
+# What d77orphaned is
 
-D77orphaned is a live ISO built on Void Linux (glibc, x86_64) with runit. You
+d77orphaned is a live ISO built on Void Linux (glibc, x86_64) with runit. You
 boot it, use it, and switch it off; nothing is installed. It is meant for:
 
 - **Recovery:** copying data off a failing disk, repairing partition tables
@@ -16,7 +16,7 @@ The full list is in [Tools in the image](../tools/index.md).
 
 ## What it does not do on its own
 
-D77orphaned is careful with the disks of the computer it runs on. Out of the
+d77orphaned is careful with the disks of the computer it runs on. Out of the
 box, it:
 
 - does not mount any disk;

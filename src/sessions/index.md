@@ -1,6 +1,6 @@
 # Sessions and logging in
 
-D77orphaned has two optional graphical environments. The console (TTYs 1 to
+d77orphaned has two optional graphical environments. The console (TTYs 1 to
 6, `Ctrl+Alt+F1` to `F6`) always works, with or without them.
 
 | Session | Display system | What you get |
@@ -42,7 +42,7 @@ if you change your mind.
 
 ## Without a GPU
 
-wasp normally needs a GPU. D77orphaned allows it to fall back to software
+wasp normally needs a GPU. d77orphaned allows it to fall back to software
 rendering (`WLR_RENDERER_ALLOW_SOFTWARE=1`, set in
 `/etc/profile.d/d77orphaned-wlr.sh`), so it also starts in virtual machines.
 It is slower, and you may see leftovers of the greeter in the background.

@@ -5,7 +5,7 @@ computers (GRUB menu). The default entry starts after a short timeout.
 
 | Entry | What it does | When to use it |
 |---|---|---|
-| **D77orphaned** | Normal boot: the pwm session starts on its own | most of the time |
+| **d77orphaned** | Normal boot: the pwm session starts on its own | most of the time |
 | **(RAM)** | Copies the whole system into memory first (`rd.live.ram`) | to remove the USB stick after booting; the system image is about 1.4 GB, so it needs more RAM than that (not verified on real hardware) |
 | **(graphics disabled)** | Boots with `nomodeset`: no graphics driver, basic VESA/framebuffer display | when the normal entry shows a black or garbled screen |
 | **(console only)** | Boots with `d77.nogui`: no graphical session at all | for text-only work, or when graphics do not work at all |
@@ -25,7 +25,7 @@ rd.luks=0 rd.md=0 rd.dm=0 rd.lvm=0
 
 They stop the early boot stage from unlocking LUKS, assembling RAID or
 activating LVM and device-mapper volumes on the computer's disks. After
-boot, D77orphaned also disables the rules that would do this later. See
+boot, d77orphaned also disables the rules that would do this later. See
 [Working safely with disks](../disks/index.md).
 
 ## Keyboard layout and language

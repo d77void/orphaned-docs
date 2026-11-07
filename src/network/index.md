@@ -58,5 +58,5 @@ into `/var/service` first, as above. To stop it again, remove the link:
 
 Utumno's bar normally fetches the weather from `wttr.in` when the wasp
 session starts. That would tell an outside service your public IP address, so
-D77orphaned blocks it (`/etc/hosts`). The bar shows "weather unavailable";
+d77orphaned blocks it (`/etc/hosts`). The bar shows "weather unavailable";
 this is expected.
