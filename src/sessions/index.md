@@ -1,7 +1,8 @@
 # Sessions and logging in
 
 d77orphaned has two optional graphical environments. The console (TTYs 1 to
-6, `Ctrl+Alt+F1` to `F6`) always works, with or without them.
+6, `Ctrl+Alt+F1` to `F6`) works with or without them, except with the
+*graphics disabled* entry (see below).
 
 | Session | Display system | What you get |
 |---|---|---|
@@ -44,15 +45,22 @@ The automatic login happens only once per boot.
 
 ## Without a graphics driver (`nomodeset`)
 
-With the *graphics disabled* entry, there is no graphics driver. In this mode:
+With the *graphics disabled* entry, there is no graphics driver. X runs on
+the basic VESA or framebuffer display. In this mode:
 
-- pwm still starts on its own, on the basic VESA or framebuffer display. In
-  a virtual machine it ran at 1920×1080.
-- The graphical greeter needs a working graphics driver, so it is replaced by
-  a **text login** (`agreety`). After pwm ends, log in there with `anon` and
-  `voidlinux` to get a shell. Typing `startx /usr/bin/env dbus-launch pwm`
-  there should start pwm again (not verified yet).
+- pwm starts on its own. **Leaving pwm starts it again**, rather than ending
+  the session. To finish, use **shutdown** or **reboot** in the menu
+  (`super+x`).
+- **`Ctrl+Alt+F1…F6` do nothing.** On some computers, switching the display
+  mode back from VESA leaves a black screen that only the power button gets
+  out of (seen on a Toshiba with Intel HD 4000 and legacy BIOS). Open a
+  terminal in pwm (`super+return`), or boot the *console only* entry to work
+  on the text console.
+- Avoid **suspend** from the menu in this mode: it is not verified, and it
+  also has to switch display modes.
 - wasp is not available.
+- If pwm keeps failing at once, the session ends and a text login appears on
+  computers that can show it.
 
 ## Console only (`d77.nogui`)
 

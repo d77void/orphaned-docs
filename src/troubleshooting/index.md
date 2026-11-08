@@ -6,8 +6,8 @@ Problems seen while testing, with their cause and what to do.
 
 The graphics driver does not work with this display. Reboot and choose
 **(graphics disabled)** in the [boot menu](../getting-started/boot-menu.md).
-If that fails too, choose **(console only)**. The console works in every
-case, on `Ctrl+Alt+F1`.
+If that fails too, choose **(console only)**, which always gives a text
+console.
 
 ## The session ended and a login screen appeared
 
@@ -17,11 +17,10 @@ as `anon` with the password `voidlinux`, and pick **pwm** or **wasp**.
 In versions before pwm 0.6.8, pwm sometimes quit right after starting (about
 one start in twenty), which dropped you to the greeter. pwm 0.6.8 fixes it.
 
-## With "graphics disabled", a text login appeared
+## With "graphics disabled", logging out restarts pwm, and Ctrl+Alt+F2 does nothing
 
-That is expected. Without a graphics driver, the greeter is a text login.
-Log in with `anon` and `voidlinux`; `startx /usr/bin/env dbus-launch pwm`
-should then start pwm again (not verified yet). See
+That is expected: on some computers, leaving X in this mode leaves a black
+screen for good. Use shutdown or reboot in pwm's menu (`super+x`). See
 [Sessions and logging in](../sessions/index.md#without-a-graphics-driver-nomodeset).
 
 ## Utumno says "weather unavailable"
