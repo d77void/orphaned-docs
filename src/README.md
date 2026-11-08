@@ -10,8 +10,8 @@ The model is closer to Grml than to Kali: a toolbox for when a system will
 not boot, a disk is failing or you need to look at data without changing it.
 
 > **Prototype.** d77orphaned is a proof of concept. It has been tested in
-> virtual machines (QEMU, BIOS and UEFI). Tests on real hardware are still to
-> do; each page says what has and has not been verified.
+> virtual machines (QEMU, BIOS and UEFI) and is being tried on real
+> hardware; each page says what has and has not been verified.
 
 ## Where to start
 
