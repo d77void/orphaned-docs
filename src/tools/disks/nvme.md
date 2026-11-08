@@ -9,7 +9,7 @@ sudo nvme error-log /dev/nvme0   # the drive's error log
 sudo nvme id-ctrl /dev/nvme0     # everything the controller reports about itself
 ```
 
-> **Writes:** `nvme format` and `nvme sanitize` erase the drive. They have no
-> place in recovery or forensics; do not run them on a disk you want to keep.
+> **Writes:** `nvme format` and `nvme sanitize` erase the drive. Never on a disk
+> you want to keep; to erase one on purpose, see [NVMe sanitize and format](../erase/nvme.md).
 
 [smartctl](smartctl.md) also reads NVMe health.

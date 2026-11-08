@@ -9,6 +9,8 @@ boot it, use it, and switch it off; nothing is installed. It is meant for:
   network checks.
 - **Careful forensics:** imaging disks and examining file systems without
   changing them.
+- **Secure erasure:** wiping disks before reuse or disposal, only when you ask
+  (see [Secure erasure and sanitization](../tools/erase/index.md)).
 - **Authorized security testing:** a few network tools (`nmap`, `tcpdump`,
   `arp-scan`, …), only for networks you are allowed to test.
 

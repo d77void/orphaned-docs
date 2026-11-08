@@ -1,7 +1,7 @@
 # Tools in the image
 
 Each area has its own chapter, with a page per tool and its basic commands:
-[Disks](disks/index.md), [Recovery](recovery/index.md), [File systems and volumes](filesystems/index.md), [Forensics](forensics/index.md), [Network](network/index.md), [Hardware and boot](hardware/index.md), [Console](console/index.md).
+[Disks](disks/index.md), [Recovery](recovery/index.md), [File systems and volumes](filesystems/index.md), [Forensics](forensics/index.md), [Secure erasure and sanitization](erase/index.md), [Network](network/index.md), [Hardware and boot](hardware/index.md), [Console](console/index.md).
 
 All tools are official Void Linux packages, except `nmap` (from Void's
 *nonfree* repository) and, from the d77void repository, the graphical
@@ -15,6 +15,7 @@ libraries.
 | Recovery and cloning | `ddrescue` `testdisk` `partclone` `fsarchiver` `extundelete` `gpart` |
 | File systems | `e2fsprogs` `xfsprogs` `xfsdump` `btrfs-progs` `dosfstools` `exfatprogs` `fuse-exfat` `ntfs-3g` `f2fs-tools` `jfsutils` `mtools` |
 | Volumes and encryption | `cryptsetup` `lvm2` `mdadm` `dislocker` |
+| Secure erasure | `nwipe` `parallel`, and the firmware commands of `hdparm`, `nvme-cli` and `sg3_utils` |
 | Forensics | `dcfldd` `libewf` `afflib` `sleuthkit` `foremost` `xmount` `binwalk` `hexedit` `xxd` |
 | Boot and EFI | `efibootmgr` `efivar` `os-prober` `kexec-tools` |
 | Network | `NetworkManager` `iproute2` `iputils` `dhcpcd` `wpa_supplicant` `iw` `ethtool` `openssh` `curl` `wget` `lftp` `links` `rsync` `fuse-sshfs` `nfs-utils` `cifs-utils` `wireguard-tools` `openvpn` |
@@ -45,7 +46,7 @@ anywhere on its own.
 ## Not included
 
 Left out on purpose: automounting (`udisks2`, `udiskie`, `gvfs`) because it
-mounts disks by itself; `nwipe` because it is destructive by nature;
+mounts disks by itself;
 `dmraid` and `bcache-tools` because they activate volumes on their own at
 boot; ZFS (needs a compiler and a lot of space); Wireshark's graphical
 interface (very large).
