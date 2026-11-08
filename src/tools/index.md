@@ -1,5 +1,8 @@
 # Tools in the image
 
+Each area has its own chapter, with a page per tool and its basic commands:
+[Disks](disks/index.md). More chapters are being added.
+
 All tools are official Void Linux packages, except `nmap` (from Void's
 *nonfree* repository) and the graphical sessions (from the d77void
 repository). A virtual-machine test checked that every program in the image
