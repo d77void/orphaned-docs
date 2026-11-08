@@ -45,12 +45,12 @@ The passwords are the same on every copy of the ISO. Change them before
 connecting to a network you do not trust, and always before turning on SSH
 (see [Network](../network/index.md)).
 
-## Nothing is kept
+## Nothing is kept, unless you ask
 
 Everything you change while it runs lives in memory and is gone at the next
-boot. Saving work means copying it somewhere on purpose, for example to a USB
-stick you mount yourself. A separate, optional data partition is planned but
-not part of the prototype.
+boot. To keep files and settings on the USB stick, you can add an encrypted
+partition: see [Persistence](../persistence/index.md). Otherwise, saving work
+means copying it somewhere on purpose.
 
 ## Source code
 

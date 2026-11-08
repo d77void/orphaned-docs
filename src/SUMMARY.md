@@ -10,6 +10,7 @@
 # Using it
 
 - [Sessions and logging in](sessions/index.md)
+- [Persistence](persistence/index.md)
 - [Working safely with disks](disks/index.md)
 - [Tools in the image](tools/index.md)
     - [Disks](tools/disks/index.md)
