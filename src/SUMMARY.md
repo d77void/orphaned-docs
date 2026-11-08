@@ -24,6 +24,14 @@
         - [gdisk and sgdisk](tools/disks/gdisk.md)
         - [fdisk](tools/disks/fdisk.md)
         - [f3](tools/disks/f3.md)
+    - [Recovery](tools/recovery/index.md)
+        - [ddrescue](tools/recovery/ddrescue.md)
+        - [testdisk](tools/recovery/testdisk.md)
+        - [photorec](tools/recovery/photorec.md)
+        - [extundelete](tools/recovery/extundelete.md)
+        - [partclone](tools/recovery/partclone.md)
+        - [fsarchiver](tools/recovery/fsarchiver.md)
+        - [gpart](tools/recovery/gpart.md)
 - [Network](network/index.md)
 
 # Building
