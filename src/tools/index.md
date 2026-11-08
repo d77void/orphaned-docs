@@ -1,25 +1,29 @@
 # Tools in the image
 
 Each area has its own chapter, with a page per tool and its basic commands:
-[Disks](disks/index.md), [Recovery](recovery/index.md), [File systems and volumes](filesystems/index.md), [Forensics](forensics/index.md), [Network](network/index.md). More chapters are being added.
+[Disks](disks/index.md), [Recovery](recovery/index.md), [File systems and volumes](filesystems/index.md), [Forensics](forensics/index.md), [Network](network/index.md), [Hardware and boot](hardware/index.md), [Console](console/index.md).
 
 All tools are official Void Linux packages, except `nmap` (from Void's
-*nonfree* repository) and the graphical sessions (from the d77void
-repository). A virtual-machine test checked that every program in the image
-finds all its libraries, and that each command listed below exists.
+*nonfree* repository) and, from the d77void repository, the graphical
+sessions, Kantele, Mullvad Browser and `d77-slock`. A virtual-machine test
+checked that every program in the image (2006 of them) finds all its
+libraries.
 
-| Area | Packages | Main commands |
-|---|---|---|
-| Disks and storage hardware | `util-linux` `parted` `gptfdisk` `smartmontools` `nvme-cli` `hdparm` `sdparm` `sg3_utils` `lsscsi` | `lsblk` `parted` `gdisk` `smartctl` `nvme` `hdparm` `sdparm` `sg_inq` `lsscsi` |
-| Recovery and cloning | `ddrescue` `testdisk` `partclone` `fsarchiver` | `ddrescue` `testdisk` `photorec` `partclone.ext4` (and the other `partclone.*`) `fsarchiver` |
-| File systems | `e2fsprogs` `xfsprogs` `btrfs-progs` `dosfstools` `exfatprogs` `ntfs-3g` `f2fs-tools` `mtools` | `mkfs.*` `fsck.*` `xfs_repair` `btrfs` `ntfs-3g` `mcopy` |
-| Volumes and encryption | `cryptsetup` `lvm2` `mdadm` | `cryptsetup` `lvm` (`vgchange`, `lvs`, …) `mdadm` |
-| Boot and EFI | `efibootmgr` `efivar` `os-prober` | `efibootmgr` `efivar` `os-prober` |
-| Network | `iproute2` `iputils` `dhcpcd` `wpa_supplicant` `openssh` `curl` `rsync` | `ip` `ping` `dhcpcd` `wpa_supplicant` `ssh` `curl` `rsync` |
-| Network diagnostics | `tcpdump` `nmap` `traceroute` `mtr` `ldns` `openbsd-netcat` `socat` `arp-scan` | `tcpdump` `nmap` `traceroute` `mtr` `drill` `nc` `socat` `arp-scan` |
-| Forensics | `dcfldd` `libewf` `sleuthkit` `foremost` | `dcfldd` `ewfacquire` `mmls` `fls` (and the rest of the Sleuth Kit) `foremost` |
-| Hardware and system | `dmidecode` `pciutils` `usbutils` `hwinfo` `chntpw` `f3` `lynis` `acpid` | `dmidecode` `lspci` `lsusb` `hwinfo` `chntpw` `f3probe` `lynis` |
-| Everyday | `tmux` `vim` `less` `man-db` `lsof` `strace` `pv` `zstd` `p7zip` `squashfs-tools` `dialog` `chrony` `xtools-minimal` | `tmux` `vim` `man` `lsof` `strace` `pv` `zstd` `7z` `mksquashfs` |
+| Area | Packages |
+|---|---|
+| Disks and storage hardware | `util-linux` `parted` `gptfdisk` `smartmontools` `nvme-cli` `hdparm` `sdparm` `sg3_utils` `lsscsi` `f3` |
+| Recovery and cloning | `ddrescue` `testdisk` `partclone` `fsarchiver` `extundelete` `gpart` |
+| File systems | `e2fsprogs` `xfsprogs` `xfsdump` `btrfs-progs` `dosfstools` `exfatprogs` `fuse-exfat` `ntfs-3g` `f2fs-tools` `jfsutils` `mtools` |
+| Volumes and encryption | `cryptsetup` `lvm2` `mdadm` `dislocker` |
+| Forensics | `dcfldd` `libewf` `afflib` `sleuthkit` `foremost` `xmount` `binwalk` `hexedit` `xxd` |
+| Boot and EFI | `efibootmgr` `efivar` `os-prober` `kexec-tools` |
+| Network | `NetworkManager` `iproute2` `iputils` `dhcpcd` `wpa_supplicant` `iw` `ethtool` `openssh` `curl` `wget` `lftp` `links` `rsync` `fuse-sshfs` `nfs-utils` `cifs-utils` `wireguard-tools` `openvpn` |
+| Network diagnostics | `tcpdump` `nmap` `traceroute` `mtr` `bind-utils` `whois` `ldns` `openbsd-netcat` `socat` `arp-scan` `iperf3` `iftop` `nethogs` `net-tools` `ipcalc` |
+| Hardware and system | `dmidecode` `pciutils` `usbutils` `hwinfo` `lshw` `inxi` `lm_sensors` `acpi` `memtester` `stress` `fio` `cpuid` `cpupower` `chntpw` `lynis` |
+| Console | `tmux` `screen` `mc` `ranger` `vim` `nano` `less` `htop` `iotop` `sysstat` `ncdu` `tree` `lsof` `strace` `ltrace` `pv` `mbuffer` `psmisc` `moreutils` `bash-completion` |
+| Archives | `zstd` `p7zip` `zip` `unzip` `lz4` `lzop` `cabextract` `unp` `squashfs-tools` |
+| Other | `gnupg` `minicom` `tio` `chrony` `xtools-minimal` `man-db` |
+| Desktop | pwm, wasp + Utumno, Kantele, `mullvad-browser`, `feh`, `conky`, `zathura`, PipeWire (sound), `upower` (battery), `d77-slock` |
 
 Memtest86+ is in the [boot menu](../getting-started/boot-menu.md), not in
 the running system.
@@ -46,6 +50,6 @@ mounts disks by itself; `nwipe` because it is destructive by nature;
 boot; ZFS (needs a compiler and a lot of space); Wireshark's graphical
 interface (very large).
 
-Candidates for a later version: `exiftool`, `tshark`, `yara`, `binwalk`,
-`john`, `wireguard-tools`, `iperf3`, `sshfs`, `nfs-utils`, `cifs-utils`,
-`lshw` and console accessibility tools.
+Candidates for a later version: `exiftool`, `tshark`, `yara`, `john`,
+`git`, `gparted`, `samba`, backup tools (`restic`, `borg`) and console
+accessibility tools.
