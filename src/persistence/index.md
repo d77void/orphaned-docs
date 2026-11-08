@@ -24,8 +24,8 @@ system.
 | What | Where it lives |
 |---|---|
 | Saved Wi-Fi networks | `/etc/NetworkManager/system-connections` |
-| pwm, including the theme and keyboard set in Kantele | `~/.config/pwm` |
-| wasp, including what Kantele sets | `~/.config/wasp` |
+| pwm, including the theme set in Kantele | `~/.config/pwm` |
+| wasp, including the theme and keyboard set in Kantele | `~/.config/wasp` |
 | Kantele | `~/.config/kantele` |
 | Utumno's theme and wallpaper | `~/.config/d77`, `~/.cache/d77`, `~/.cache/quickshell/wallpaper` |
 | SSH keys | `~/.ssh` |
