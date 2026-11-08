@@ -16,6 +16,11 @@ sudo nwipe --method=verify_zero /dev/sdX    # write nothing: check the disk is a
 In the interactive screen, nothing is erased until you select disks and press
 the key to start.
 
+**Where to run it:** nwipe's screen is unreadable in pwm's terminal (`st`, with
+its Dracula colours and transparency). Run it in the wasp session, where it was
+tested and is readable. The text console (`Ctrl+Alt+F2`, not available with the
+*graphics disabled* entry) should work too, but has not been tested.
+
 ## Methods
 
 | `--method=` | What it does |

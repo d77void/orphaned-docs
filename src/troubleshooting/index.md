@@ -33,6 +33,19 @@ Expected: d77orphaned blocks the weather request on purpose. See
 Wired networks connect by themselves. For Wi-Fi, use `nmtui` or
 `nmcli device wifi connect …`; see [Network](../network/index.md#wi-fi).
 
+## Programs crash at random, or `SQUASHFS error` / `Input/output error`
+
+The system cannot read the USB stick reliably. Programs then fail in strange
+ways, such as a segmentation fault in `su`. Seen on an old laptop with a stick
+that works elsewhere. Try another USB port (no hubs), then the **(RAM)** boot
+entry, which copies the system to memory at boot. If it persists, run
+**Memtest86+** from the boot menu. See also [Download](../getting-started/download.md)
+to check the stick.
+
+## nwipe's screen is unreadable
+
+In pwm's terminal it is. See [nwipe](../tools/erase/nwipe.md).
+
 ## A disk does not show up as mounted
 
 Nothing is mounted automatically, on purpose. See
