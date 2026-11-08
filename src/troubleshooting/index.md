@@ -29,10 +29,10 @@ should then start pwm again (not verified yet). See
 Expected: d77orphaned blocks the weather request on purpose. See
 [Network](../network/index.md#privacy).
 
-## Utumno's network indicator says "offline"
+## No network
 
-The indicator reads NetworkManager, which d77orphaned does not use. Check
-the real state with `ip -br addr`.
+Wired networks connect by themselves. For Wi-Fi, use `nmtui` or
+`nmcli device wifi connect …`; see [Network](../network/index.md#wi-fi).
 
 ## A disk does not show up as mounted
 

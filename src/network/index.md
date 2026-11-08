@@ -2,8 +2,8 @@
 
 ## Wired
 
-A wired connection works by itself: `dhcpcd` runs at boot and configures
-every interface that gets a DHCP answer. Check with:
+NetworkManager starts at boot and connects a wired network by itself
+(DHCP). Check with:
 
 ```sh
 ip -br addr
@@ -16,23 +16,29 @@ The clock is set over the network by `chronyd`, which also runs at boot.
 
 ## Wi-Fi
 
-There is no NetworkManager. Wi-Fi uses `wpa_supplicant`, and `dhcpcd` then
-gets an address for it. Find the interface name with `ip -br link` (here
-`wlan0`):
+Use `nmtui` (menus) or `nmcli`:
 
 ```sh
-wpa_passphrase "NetworkName" 'the passphrase' | sudo tee -a /etc/wpa_supplicant/wpa_supplicant.conf
-sudo wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf
-ip -br addr show wlan0          # an address appears after a few seconds
+nmcli device wifi list
+nmcli device wifi connect "NetworkName" password 'the passphrase'
 ```
+
+In the wasp session, Utumno's network indicator shows the connection. More
+in [nmcli and nmtui](../tools/network/networkmanager.md).
 
 Some Wi-Fi cards need firmware that is not free software; the image has the
 firmware from Void's `linux-firmware` package only.
 
-> Not verified yet: Wi-Fi on real hardware.
+> Tested on real hardware by the user (Wi-Fi works with the right
+> NetworkManager commands); not verified on other machines.
 
-The network indicator in Utumno's bar reads NetworkManager, so it shows
-"offline" even when the connection works. Trust `ip addr` instead.
+`dhcpcd` and `wpa_supplicant` are still installed for manual use, but not
+started at boot, so they do not compete with NetworkManager.
+
+## Staying offline
+
+To examine a machine without touching any network, turn networking off
+before connecting a cable: `nmcli networking off` (and `on` to come back).
 
 ## Nothing listens
 

@@ -1,7 +1,7 @@
 # Tools in the image
 
 Each area has its own chapter, with a page per tool and its basic commands:
-[Disks](disks/index.md), [Recovery](recovery/index.md), [File systems and volumes](filesystems/index.md), [Forensics](forensics/index.md). More chapters are being added.
+[Disks](disks/index.md), [Recovery](recovery/index.md), [File systems and volumes](filesystems/index.md), [Forensics](forensics/index.md), [Network](network/index.md). More chapters are being added.
 
 All tools are official Void Linux packages, except `nmap` (from Void's
 *nonfree* repository) and the graphical sessions (from the d77void
@@ -42,8 +42,9 @@ anywhere on its own.
 
 Left out on purpose: automounting (`udisks2`, `udiskie`, `gvfs`) because it
 mounts disks by itself; `nwipe` because it is destructive by nature;
-NetworkManager (`dhcpcd` and `wpa_supplicant` are enough); ZFS (needs a
-compiler and a lot of space); Wireshark's graphical interface (very large).
+`dmraid` and `bcache-tools` because they activate volumes on their own at
+boot; ZFS (needs a compiler and a lot of space); Wireshark's graphical
+interface (very large).
 
 Candidates for a later version: `exiftool`, `tshark`, `yara`, `binwalk`,
 `john`, `wireguard-tools`, `iperf3`, `sshfs`, `nfs-utils`, `cifs-utils`,
