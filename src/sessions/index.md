@@ -75,4 +75,4 @@ rendering (`WLR_RENDERER_ALLOW_SOFTWARE=1`, set in
 `/etc/profile.d/d77orphaned-wlr.sh`), so it also starts in virtual machines.
 It is slower, and you may see leftovers of the greeter in the background.
 
-> Not verified yet: both sessions with a real GPU on real hardware.
+Both sessions have been tested on real hardware, with a GPU.

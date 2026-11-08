@@ -39,5 +39,5 @@ In the graphical sessions, Kantele (the settings program for pwm and wasp)
 sets the keyboard layout. From an X11 terminal, `setxkbmap pt` also works for
 the current session.
 
-> Not verified yet: changing the layout from the boot menu, and Kantele's
-> keyboard setting on real hardware.
+> Not verified yet: changing the layout from the boot menu. Kantele's keyboard
+> setting was tested on real hardware.
