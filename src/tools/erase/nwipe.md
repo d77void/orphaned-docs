@@ -13,8 +13,9 @@ sudo nwipe --method=dodshort --verify=all /dev/sdX /dev/sdY
 sudo nwipe --method=verify_zero /dev/sdX    # write nothing: check the disk is all zeros
 ```
 
-In the interactive screen, nothing is erased until you select disks and press
-the key to start.
+In the interactive screen, nothing is erased until you start it: **Space** marks
+or unmarks a disk, and **S** (capital, `Shift+S`) starts the wipe. The keys are
+listed at the bottom of the screen.
 
 **Where to run it:** nwipe's screen is unreadable in pwm's terminal (`st`, with
 its Dracula colours and transparency). Run it in the wasp session, where it was
