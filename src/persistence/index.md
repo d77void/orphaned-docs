@@ -59,6 +59,17 @@ Writing a new ISO to the stick replaces the partition table, so the
 persistence partition and its data are lost. **Copy your files elsewhere
 first.** Persistence is not a backup: keep copies of anything important.
 
+## Removing the stick without closing
+
+Run `d77-persist close` before removing the stick or switching off. If the
+power goes first, what was already saved survives, but **files written in the
+last moments can be lost**, even if they were listed just before: Linux keeps
+writes in memory for a while. After saving something important, run `sync`.
+
+Checked with a power cut in a virtual machine (a file saved with `sync`
+survived, one without it did not, and the file system was fine), and with a
+forced power-off on real hardware (nothing that was already there was lost).
+
 ## Safety
 
 - Nothing happens at boot: the partition stays locked and unmounted until you
