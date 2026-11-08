@@ -9,7 +9,27 @@ d77orphaned has two optional graphical environments. The console (TTYs 1 to
 | **wasp + Utumno** | Wayland | a tiling compositor with the Utumno bar and launcher, the `alacritty` terminal and `wmenu` |
 
 Both come from the d77void project. Kantele, the settings program for pwm
-and wasp (keyboard, appearance, …), is installed for both.
+and wasp (keyboard, theme, shell, …), is installed for both. In both
+sessions there is sound (PipeWire), the battery level (UPower), Mullvad
+Browser, and this documentation: run `d77-docs` (it works offline).
+
+## pwm
+
+- The wallpaper follows the pwm theme; changing the theme in Kantele
+  changes the wallpaper too.
+- A panel at the bottom left (conky) shows the kernel, CPU, memory, network
+  address, disks and pwm's main keys.
+- `super+return` terminal, `super+d` dmenu, `super+q` close a window,
+  `super+x` log out or power off, `super+1…9` workspaces.
+- The screen locks after 5 minutes without use, or with `super+t`. Unlock
+  with the live user's password, `voidlinux`.
+- On laptops, tapping the touchpad clicks.
+
+## wasp + Utumno
+
+- `super+y` opens Utumno's wallpaper picker; the images are in
+  `~/Wallpaper`. `super+space` opens the launcher.
+- Utumno's bar shows the network (NetworkManager), sound and battery.
 
 ## What happens at boot
 

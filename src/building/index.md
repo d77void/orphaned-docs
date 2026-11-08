@@ -47,6 +47,15 @@ sudo ./mkorphaned.sh -n \
 
 Packages already downloaded are cached in `xbps-cachedir-x86_64/`.
 
+## Documentation inside the image
+
+When a checkout of [d77void/orphaned-docs](https://github.com/d77void/orphaned-docs)
+sits next to the d77orphaned repository (or `D77_DOCS_DIR` points to one)
+and `mdbook` is installed on the build computer, the build puts this
+documentation into the image: the website in
+`/usr/share/doc/d77orphaned/html` and the Markdown pages in
+`/usr/share/doc/d77orphaned/md`. Without them, the build warns and goes on.
+
 ## The SOURCES file
 
 Each build also writes `d77orphaned-live-x86_64-<date>.SOURCES.txt` next to
