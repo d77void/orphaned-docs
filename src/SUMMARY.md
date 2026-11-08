@@ -5,6 +5,7 @@
 # Getting started
 
 - [What d77orphaned is](getting-started/overview.md)
+- [Download](getting-started/download.md)
 - [The boot menu](getting-started/boot-menu.md)
 
 # Using it
