@@ -1,7 +1,7 @@
 # Tools in the image
 
 Each area has its own chapter, with a page per tool and its basic commands:
-[Disks](disks/index.md), [Recovery](recovery/index.md), [File systems and volumes](filesystems/index.md). More chapters are being added.
+[Disks](disks/index.md), [Recovery](recovery/index.md), [File systems and volumes](filesystems/index.md), [Forensics](forensics/index.md). More chapters are being added.
 
 All tools are official Void Linux packages, except `nmap` (from Void's
 *nonfree* repository) and the graphical sessions (from the d77void

@@ -43,6 +43,16 @@
         - [dislocker](tools/filesystems/dislocker.md)
         - [LVM](tools/filesystems/lvm.md)
         - [mdadm](tools/filesystems/mdadm.md)
+    - [Forensics](tools/forensics/index.md)
+        - [Hashes](tools/forensics/hashes.md)
+        - [dcfldd](tools/forensics/dcfldd.md)
+        - [EWF (E01) tools](tools/forensics/ewf.md)
+        - [affinfo](tools/forensics/afflib.md)
+        - [xmount](tools/forensics/xmount.md)
+        - [Sleuth Kit](tools/forensics/sleuthkit.md)
+        - [foremost](tools/forensics/foremost.md)
+        - [binwalk](tools/forensics/binwalk.md)
+        - [xxd and hexedit](tools/forensics/hex.md)
 - [Network](network/index.md)
 
 # Building
