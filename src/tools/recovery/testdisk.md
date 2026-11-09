@@ -14,9 +14,13 @@ sudo testdisk /log disk.img       # work on an image instead of the disk
 ```
 
 Typical path for a lost partition: choose the disk → the partition table
-type (it proposes one) → **Analyse** → **Quick Search** (then **Deeper
+type → **Analyse** → **Quick Search** (then **Deeper
 Search** if needed). Check the partitions it found with **P** (list files)
 before going on.
+
+> **Check the table type.** On a GPT disk left with no partitions, TestDisk
+> proposes *Intel* (MBR): choosing it would replace the GPT. Choose **EFI GPT**.
+> See [I deleted a partition](../../emergency/deleted-partition.md).
 
 > **Writes:** only at the end, on **Write**. Until then, everything is read
 > only. Prefer running it on an image of the disk.

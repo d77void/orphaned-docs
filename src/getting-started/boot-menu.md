@@ -9,6 +9,7 @@ computers (GRUB menu). The default entry starts after a short timeout.
 | **(RAM)** | Copies the whole system into memory first (`rd.live.ram`) | to remove the USB stick after booting; the system image is about 1.4 GB, so it needs more RAM than that (not verified on real hardware) |
 | **(graphics disabled)** | Boots with `nomodeset`: no graphics driver, basic VESA/framebuffer display | when the normal entry shows a black or garbled screen |
 | **(console only)** | Boots with `d77.nogui`: no graphical session at all | for text-only work, or when graphics do not work at all |
+| **(firmware tools)** | Normal boot, plus `iomem=relaxed`: lets [flashrom](../tools/hardware/flashrom.md) reach the firmware chip | only to read or write firmware |
 | **Memtest86+** | Memory test, without starting Linux | to check RAM |
 
 The BIOS menu also has *Boot first HD found by BIOS*, *Reboot* and *Power Off*.

@@ -16,3 +16,4 @@ disk, then run the other tools on the image (see [losetup](../disks/losetup.md))
 | [partclone](partclone.md) | imaging only the used blocks of a file system |
 | [fsarchiver](fsarchiver.md) | backing up and restoring file systems as archives |
 | [gpart](gpart.md) | guessing a lost MBR partition table |
+| [restic](restic.md), [borg](borg.md) | getting files back from backups |

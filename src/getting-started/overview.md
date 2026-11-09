@@ -4,7 +4,8 @@ d77orphaned is a live ISO built on Void Linux (glibc, x86_64) with runit. You
 boot it, use it, and switch it off; nothing is installed. It is meant for:
 
 - **Recovery:** copying data off a failing disk, repairing partition tables
-  and file systems, rescuing a system that no longer boots.
+  and file systems, reinstalling the boot loader of a system that no longer
+  boots, restoring backups.
 - **Diagnostics:** disk health (SMART, NVMe), hardware inventory, memory test,
   network checks.
 - **Careful forensics:** imaging disks and examining file systems without
@@ -14,7 +15,8 @@ boot it, use it, and switch it off; nothing is installed. It is meant for:
 - **Authorized security testing:** a few network tools (`nmap`, `tcpdump`,
   `arp-scan`, …), only for networks you are allowed to test.
 
-The full list is in [Tools in the image](../tools/index.md).
+The full list is in [Tools in the image](../tools/index.md). When something has
+gone wrong, start with the [Emergency procedures](../emergency/index.md).
 
 ## What it does not do on its own
 

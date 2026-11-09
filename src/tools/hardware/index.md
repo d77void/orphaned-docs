@@ -15,3 +15,5 @@ how it boots. For disk health, see [smartctl](../disks/smartctl.md).
 | [efibootmgr, efivar, os-prober](boot.md) | UEFI boot entries, finding installed systems |
 | [chntpw](chntpw.md) | Windows local accounts (reset a password) |
 | [lynis](lynis.md) | security audit of a Linux system |
+| [flashrom](flashrom.md) | reading and writing firmware chips |
+| [i2c-tools](i2c.md) | the internal I2C/SMBus buses |

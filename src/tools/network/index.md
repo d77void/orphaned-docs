@@ -18,6 +18,7 @@ The scanning and capture tools ([nmap](nmap.md), [tcpdump](tcpdump.md),
 | [NFS and SMB shares](shares.md) | mounting network shares |
 | [tcpdump](tcpdump.md) | capturing traffic |
 | [nmap](nmap.md) | finding hosts and open ports |
+| [testssl.sh](testssl.md), [ssh-audit](ssh-audit.md) | auditing TLS and SSH servers |
 | [arp-scan](arp-scan.md) | listing devices on the local network |
 | [nc and socat](nc.md) | raw connections, quick file transfer |
 | [iperf3](iperf3.md) | measuring bandwidth |

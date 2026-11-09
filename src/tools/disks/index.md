@@ -18,6 +18,7 @@ and read [Working safely with disks](../../disks/index.md).
 | [blockdev](blockdev.md) | the kernel's read-only flag, device sizes |
 | [losetup](losetup.md) | using a disk image as a disk |
 | [parted](parted.md), [gdisk and sgdisk](gdisk.md), [fdisk](fdisk.md) | partition tables |
+| [gparted](gparted.md) | partitions, in a window |
 | [f3](f3.md) | fake-capacity USB sticks and cards |
 
 The commands use `/dev/sdX` for a whole disk and `/dev/sdX1` for a

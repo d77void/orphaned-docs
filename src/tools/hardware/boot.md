@@ -1,6 +1,7 @@
 # efibootmgr, efivar, os-prober: boot
 
-**Packages:** `efibootmgr`, `efivar`, `os-prober` · **Writes:** `efibootmgr` changes firmware settings when told to
+**Packages:** `efibootmgr`, `efivar`, `os-prober`, and `grub`, `grub-x86_64-efi` for
+[reinstalling a boot loader](../../emergency/no-boot.md) · **Writes:** `efibootmgr` changes firmware settings when told to
 
 ```sh
 efibootmgr                 # UEFI boot entries and boot order

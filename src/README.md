@@ -19,7 +19,8 @@ not boot, a disk is failing or you need to look at data without changing it.
 - Want to try it? See [Download](getting-started/download.md).
 - Which boot entry should you pick? See [The boot menu](getting-started/boot-menu.md).
 - About to look at someone's disk? Read [Working safely with disks](disks/index.md) first.
-- Something went wrong? See [Common problems](troubleshooting/index.md).
+- A computer will not boot, a disk is dying, a partition is gone? See the [Emergency procedures](emergency/index.md).
+- Something went wrong with d77orphaned itself? See [Common problems](troubleshooting/index.md).
 
 ## Not affiliated with Void Linux
 

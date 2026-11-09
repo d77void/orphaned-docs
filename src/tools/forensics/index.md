@@ -25,5 +25,7 @@ custody, notes and procedure are yours.
 | [xmount](xmount.md) | presenting E01/AFF images as raw disks |
 | [Sleuth Kit](sleuthkit.md) | partitions, files and deleted files inside an image |
 | [foremost](foremost.md) | carving files out of raw data |
+| [exiftool](exiftool.md) | file metadata: dates, GPS, author |
+| [yara](yara.md) | searching with rules |
 | [binwalk](binwalk.md) | finding embedded files and firmware |
 | [xxd and hexedit](hex.md) | looking at raw bytes |
